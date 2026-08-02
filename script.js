@@ -1,1 +1,1 @@
-console.log('Website loaded');
+const w=['My Love ❤️','My Happiness ✨','My Forever 💖'];let i=0,c=0,d=false,t=document.getElementById('typing');function x(){if(!t)return;let s=w[i];if(!d){t.textContent=s.substring(0,c++);if(c>s.length){d=true;setTimeout(x,1200);return}}else{t.textContent=s.substring(0,c--);if(c<0){d=false;i=(i+1)%w.length}}setTimeout(x,d?60:120)}x();
